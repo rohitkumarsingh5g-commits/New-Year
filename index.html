@@ -26,6 +26,7 @@ body{
   width:90%;
   max-width:400px;
   animation:fadeIn 1.5s ease-in-out;
+  position:relative;
 }
 @keyframes fadeIn{
   from{opacity:0;transform:translateY(20px);}
@@ -91,6 +92,17 @@ button:hover{
   0%{transform:translateY(-10vh) rotate(0);}
   100%{transform:translateY(100vh) rotate(360deg);}
 }
+#ad-top, #ad-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+#ad-top{
+  margin-bottom:10px;
+}
 #ad-container{
   margin-top:20px;
 }
@@ -99,6 +111,20 @@ button:hover{
 <body>
 
 <div class="container">
+
+  <div id="ad-top">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '4cc2e3f2adae815d70b8191297afb969',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//orientsweptautopsy.com/4cc2e3f2adae815d70b8191297afb969/invoke.js"></script>
+  </div>
+
   <a href="https://ibb.co/Sw16Z8rc">
     <img src="https://i.ibb.co/KxQ58kwD/image-search-1762084335144.gif" alt="Happy New Year Celebration">
   </a>
@@ -129,12 +155,12 @@ button:hover{
 <script>
 function shareWhatsApp(){
   const name=document.getElementById('name').value.trim()||'आपके दोस्त';
-  const msg=`🎆 Happy New Year! 🎉\n${name} की ओर से नए साल की ढेरों शुभकामनाएँ 🥳\n✨ खुशियाँ, सफलता और प्यार से भरपूर साल की शुरुआत करें 💫\n🔗 यहाँ देखें: https://new-year-phi-one.vercel.app/`;
+  const msg=`🎆 Happy New Year! 🎉\n${name} की ओर से नए साल की ढेरों शुभकामनाएँ 🥳\n✨ खुशियाँ, सफलता और प्यार से भरपूर साल की शुरुआत करें 💫`;
   const url=`https://wa.me/?text=${encodeURIComponent(msg)}`;
   window.open(url,'_blank');
 }
 
-// toggle popup function
+// toggle popup
 function togglePopup(){
   const popup=document.getElementById('popup');
   const btn=document.getElementById('celebrateBtn');
