@@ -100,12 +100,8 @@ button:hover{
   margin:0;
   padding:0;
 }
-#ad-top{
-  margin-bottom:10px;
-}
-#ad-container{
-  margin-top:20px;
-}
+#ad-top{margin-bottom:10px;}
+#ad-container{margin-top:20px;}
 </style>
 </head>
 <body>
@@ -155,12 +151,11 @@ button:hover{
 <script>
 function shareWhatsApp(){
   const name=document.getElementById('name').value.trim()||'आपके दोस्त';
-  const msg=`🎆 Happy New Year! 🎉\n${name} की ओर से नए साल की ढेरों शुभकामनाएँ 🥳\n✨ खुशियाँ, सफलता और प्यार से भरपूर साल की शुरुआत करें 💫`;
+  const msg=`🎆 Happy New Year! 🎉\n${name} की ओर से नए साल की ढेरों शुभकामनाएँ 🥳\n✨ खुशियाँ, सफलता और प्यार से भरपूर साल की शुरुआत करें 💫\n👉 देखें: https://new-year-edim.vercel.app/`;
   const url=`https://wa.me/?text=${encodeURIComponent(msg)}`;
   window.open(url,'_blank');
 }
 
-// toggle popup
 function togglePopup(){
   const popup=document.getElementById('popup');
   const btn=document.getElementById('celebrateBtn');
@@ -172,7 +167,6 @@ function togglePopup(){
   }
 }
 
-// confetti animation
 function createConfetti(){
   for(let i=0;i<30;i++){
     const c=document.createElement('div');
